@@ -1,0 +1,313 @@
+:root {
+    --primary-100: #FFD700;
+    --primary-200: #ddb900;
+    --primary-300: #917800;
+    --accent-100: #FF4500;
+    --accent-200: #ffe49a;
+    --text-100: #FFFFFF;
+    --text-200: #e0e0e0;
+    --bg-100: #1C1C1C;
+    --bg-200: #2b2b2b;
+    --bg-300: #434343;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: var(--bg-100);
+    color: var(--text-200);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background: var(--primary-200);
+    color: var(--text-100);
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: relative;
+    border-bottom: 3px solid var(--primary-100);
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: var(--text-100);
+    text-decoration: none;
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--accent-100);
+}
+
+/* Hero Section */
+.hero {
+    text-align: left;
+    padding: 100px 20px;
+    background: var(--bg-200);
+    color: var(--text-100);
+    border-radius: 12px;
+    margin-bottom: 50px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: var(--text-200);
+    margin-bottom: 40px;
+    max-width: 800px;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px black;
+}
+
+.hero button {
+    background-color: var(--accent-100);
+    color: var(--text-100);
+    border: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero button:hover {
+    background-color: var(--accent-200);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Main Content */
+main {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: var(--bg-300);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2, h3 {
+    color: var(--primary-100);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Services and How to Get Started Sections - Three Column Layout */
+.services, .how-to-get-started {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services div, .how-to-get-started div {
+    background-color: var(--bg-200);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.services div:hover, .how-to-get-started div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+ul, ol {
+    margin-left: 30px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--bg-200);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: var(--primary-100);
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid var(--bg-300);
+    border-radius: 5px;
+    background-color: var(--bg-100);
+    color: var(--text-100);
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--accent-100);
+    outline: none;
+    box-shadow: 0 0 5px var(--accent-100);
+}
+
+button[type="submit"] {
+    background-color: var(--accent-100);
+    color: var(--text-100);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--accent-200);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-300);
+    color: var(--text-100);
+    text-align: center;
+    padding: 30px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    border-top: 3px solid var(--primary-100);
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Video Section */
+video {
+    display: block;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Styles */
+button {
+    background: var(--accent-100);
+    color: var(--text-100);
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Style */
+.card {
+    background-color: var(--bg-200);
+    color: var(--text-100);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--primary-100);
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.card p {
+    color: var(--text-200);
+    font-size: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .services, .how-to-get-started {
+        grid-template-columns: 1fr;
+    }
+}
